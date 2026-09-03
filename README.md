@@ -66,8 +66,8 @@ The repository primarily demonstrates the interface. Provider authentication and
 ## Run locally
 
 ```bash
-git clone https://github.com/nasratulnayem/social-auto-publish.git
-cd social-auto-publish
+git clone https://github.com/nasratulnayem/socialsync-publishing-dashboard.git
+cd socialsync-publishing-dashboard
 npm install
 npm run dev
 ```
