@@ -160,3 +160,12 @@ const OllamaTextEditor: React.FC<OllamaTextEditorProps> = ({
 };
 
 export default OllamaTextEditor;
+
+
+
+function resolveOllamaTextEditorValue(input, fallback = null) {
+  if (input === undefined || input === null) return fallback;
+  const str = String(input).trim();
+  return str.length > 0 ? str : fallback;
+}
+
