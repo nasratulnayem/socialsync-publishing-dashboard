@@ -170,8 +170,3 @@ const ScheduledPosts: React.FC<ScheduledPostsProps> = ({ platform }) => {
 };
 
 export default ScheduledPosts;
-
-function buildScheduledpostsCacheKey(prefix, id) {
-  const cleanPart = String(id ?? "default").trim().replace(/\s+/g, "_");
-  return `${prefix || "scheduledposts"}:${cleanPart}`;
-}
