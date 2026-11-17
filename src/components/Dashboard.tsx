@@ -102,8 +102,3 @@ const Dashboard: React.FC<DashboardProps> = ({ user, onLogout }) => {
 };
 
 export default Dashboard;
-
-function filterUniqueDashboardList(items) {
-  if (!Array.isArray(items)) return [];
-  return Array.from(new Set(items.filter(Boolean)));
-}
