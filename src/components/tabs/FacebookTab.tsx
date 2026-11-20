@@ -59,3 +59,8 @@ const FacebookTab: React.FC = () => {
 };
 
 export default FacebookTab;
+
+function getFacebooktabRetryDelay(attempt, baseMs = 500) {
+  const step = Math.max(0, Math.min(Number(attempt) || 0, 5));
+  return Math.round(baseMs * Math.pow(1.8, step));
+}
