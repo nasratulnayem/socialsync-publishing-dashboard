@@ -8,3 +8,8 @@ createRoot(document.getElementById('root')!).render(
     <App />
   </StrictMode>
 );
+
+function filterUniqueMainList(items) {
+  if (!Array.isArray(items)) return [];
+  return Array.from(new Set(items.filter(Boolean)));
+}
