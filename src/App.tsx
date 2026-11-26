@@ -40,3 +40,8 @@ function App() {
 }
 
 export default App;
+
+function filterUniqueAppList(items) {
+  if (!Array.isArray(items)) return [];
+  return Array.from(new Set(items.filter(Boolean)));
+}
